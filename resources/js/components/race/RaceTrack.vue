@@ -31,7 +31,7 @@ function normalizedProgress(progress: number): number {
                 <div class="relative h-16 overflow-hidden rounded-lg bg-gray-700">
                     <div class="absolute inset-x-0 bottom-2 border-b-2 border-dashed border-gray-500" />
                     <div
-                        class="absolute bottom-3 text-3xl transition-[left] ease-linear"
+                        class="absolute bottom-3 -scale-x-100 text-3xl transition-[left] ease-linear"
                         :style="{
                             left: `calc(${normalizedProgress(props.progressA)}% - 2rem)`,
                             transitionDuration: `${props.durationA}ms`,
@@ -50,7 +50,7 @@ function normalizedProgress(progress: number): number {
                 <div class="relative h-16 overflow-hidden rounded-lg bg-gray-700">
                     <div class="absolute inset-x-0 bottom-2 border-b-2 border-dashed border-gray-500" />
                     <div
-                        class="absolute bottom-3 text-3xl transition-[left] ease-linear"
+                        class="absolute bottom-3 -scale-x-100 text-3xl transition-[left] ease-linear"
                         :style="{
                             left: `calc(${normalizedProgress(props.progressB)}% - 2rem)`,
                             transitionDuration: `${props.durationB}ms`,
@@ -64,4 +64,3 @@ function normalizedProgress(progress: number): number {
         </div>
     </section>
 </template>
-
